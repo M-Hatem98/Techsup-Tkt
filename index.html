@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تكسب تكت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Cairo Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar fixed-top navbar-expand-lg py-1">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            class="img-fluid"
+            width="150px"
+            alt="Logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#how-we-work">How it works</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="login.html" class="btn btn-login">Login</a>
+            <a href="register.html" class="btn btn-cta">Start Trial</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero d-flex align-items-center overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <small class="text-warning fw-bold fs-5"
+              ># Smart SaaS Ticketing Platform</small
+            >
+            <h1 class="my-4 text-gradient">
+              Manage Support Tickets <br />
+              <span class="text-warning">Smarter & Faster</span>
+            </h1>
+            <p class="mb-4 pe-sm-3">
+              A powerful multi-tenant ticketing system with real-time analytics,
+              automation, roles & permissions, and WhatsApp integrations.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="dashboard-wrap">
+              <div class="dashboard-main">
+                <img
+                  src="assets/images/dashboard-preview.png"
+                  class="img-fluid rounded-3 border"
+                  alt="Dashboard"
+                />
+              </div>
+
+              <div class="floating-card card-1">
+                <strong class="badge bg-main">Tickets Count</strong>
+                <img
+                  src="assets/images/Tickets-Count.png"
+                  class="img-fluid rounded-3"
+                  alt="Tickets-Count"
+                />
+              </div>
+
+              <div class="floating-card card-2">
+                <strong class="badge bg-main">Active Tickets</strong>
+                <img
+                  src="assets/images/Statuses-Percentage.png"
+                  class="img-fluid rounded-3 border"
+                  alt="Statuses-Percentage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="features-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <small class="text-warning fw-bold">POWERFUL FEATURES</small>
+          <h2 class="fw-bold mt-3">
+            Everything You Need to
+            <span class="text-gradient">Manage Tickets</span>
+          </h2>
+          <p class="text-muted mt-2">
+            A complete ticketing ecosystem built for modern teams & enterprises
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Smart Ticketing</h5>
+              <p>
+                Create, track and resolve tickets efficiently with automation.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets3.lottiefiles.com/packages/lf20_2glqweqs.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Multi-Tenant System</h5>
+              <p>Manage multiple companies with full isolation and control.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets2.lottiefiles.com/packages/lf20_kkflmtur.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Advanced Analytics</h5>
+              <p>Real-time insights, KPIs and performance tracking.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Custom Ticket Configuration</h5>
+              <p>Flexible ticket fields, priorities, statuses & workflows.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets2.lottiefiles.com/packages/lf20_rycdh53q.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Live Chat</h5>
+              <p>Communicate instantly between staff and customers.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets6.lottiefiles.com/packages/lf20_tll0j4bb.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Real-Time Notifications</h5>
+              <p>Instant alerts for ticket updates and assignments.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets1.lottiefiles.com/packages/lf20_twijbubv.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Assign Features</h5>
+              <p>Smart assignment rules based on roles & departments.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets8.lottiefiles.com/packages/lf20_xRmNN8.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Activity Log</h5>
+              <p>Track every action and update per ticket in real time.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets5.lottiefiles.com/packages/lf20_1pxqjqps.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Knowledge Base</h5>
+              <p>Self-service articles to reduce ticket load.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets2.lottiefiles.com/packages/lf20_qp1q7mct.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Scheduled Reports</h5>
+              <p>Daily, weekly, monthly & yearly automated reports.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Multi Roles & Permissions</h5>
+              <p>Full access control for admins, agents & managers.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets9.lottiefiles.com/packages/lf20_kdx6cani.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Nested Branches</h5>
+              <p>Multiple branches per company with hierarchy.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>Ticket Recipients Control</h5>
+              <p>Control who receives tickets per department or role.</p>
+            </div>
+          </div>
+
+          <div
+            class="col-xl-3 col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="feature-card">
+              <div class="feature-icon">
+                <lottie-player
+                  src="https://assets9.lottiefiles.com/packages/lf20_4kx2q32n.json"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <h5>SMS & WhatsApp Integration</h5>
+              <p>
+                Communicate directly with customers on their favorite channels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-we-work" class="how-we-work section py-5">
+      <div class="container section-title text-center" data-aos="fade-up">
+        <small class="text-warning fw-bold">HOW IT WORKS</small>
+        <h2 class="fw-bold mt-2">
+          Simple Steps to <span class="text-gradient">Get Started</span>
+        </h2>
+        <p class="text-muted">
+          Launch your ticketing system in minutes with a clear workflow
+        </p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="steps-wrapper">
+          <div class="step-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="bi bi-building"></i>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 01</span>
+                <h3>Create Your Company</h3>
+                <p>
+                  Register your organization, create branches, and configure
+                  departments in a few simple steps.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 02</span>
+                <h3>Assign Roles & Permissions</h3>
+                <p>
+                  Define access levels for admins, agents, and managers with
+                  full control.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="bi bi-ticket-perforated"></i>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 03</span>
+                <h3>Manage Tickets</h3>
+                <p>
+                  Receive and manage tickets from web, email, SMS, and WhatsApp
+                  in one unified dashboard.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+            <div class="step-content">
+              <div class="step-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <div class="step-info">
+                <span class="step-number">Step 04</span>
+                <h3>Analyze & Improve</h3>
+                <p>
+                  Track performance, generate reports, and continuously optimize
+                  your support workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing-section">
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <small class="text-warning fw-bold">PRICING</small>
+          <h2 class="fw-bold mt-3">
+            Choose the <span class="text-gradient">Right Plan</span> for You
+          </h2>
+          <p class="text-muted mt-2">
+            Start free, upgrade anytime, and scale without limits
+          </p>
+        </div>
+
+        <div class="pricing-toggle">
+          <button class="active" data-plan="monthly">Monthly</button>
+          <button data-plan="yearly">Yearly <span>Save 20%</span></button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="pricing-card">
+              <h4>Starter</h4>
+              <p class="plan-desc">Perfect for small teams</p>
+
+              <div class="price">
+                <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                <img
+                  src="assets/images/Saudi_Riyal_Symbol.png"
+                  width="20px"
+                  alt="Saudi_Riyal_Symbol"
+                />
+                <span class="period">/mo</span>
+              </div>
+
+              <ul>
+                <li>Smart Ticketing</li>
+                <li>Live Chat</li>
+                <li>Basic Reports</li>
+              </ul>
+
+              <a href="#" class="btn-outline">Get Started</a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="pricing-card featured">
+              <span class="popular">Most Popular</span>
+
+              <h4>Professional</h4>
+              <p class="plan-desc">Best for growing companies</p>
+
+              <div class="price">
+                <span class="amount" data-monthly="199" data-yearly="1900"
+                  >199</span
+                >
+                <img
+                  src="assets/images/Saudi_Riyal_Symbol.png"
+                  width="20px"
+                  alt="Saudi_Riyal_Symbol"
+                />
+                <span class="period">/mo</span>
+              </div>
+
+              <ul>
+                <li>Multi-Tenant System</li>
+                <li>Advanced Analytics</li>
+                <li>Scheduled Reports</li>
+                <li>SMS & WhatsApp</li>
+              </ul>
+
+              <a href="#" class="btn-main">Start Free Trial</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="pricing-card">
+              <h4>Enterprise</h4>
+              <p class="plan-desc">Custom solutions</p>
+
+              <div class="price custom">Custom Pricing</div>
+
+              <ul>
+                <li>Unlimited Tickets</li>
+                <li>Custom Roles</li>
+                <li>API Integrations</li>
+              </ul>
+
+              <a href="#" class="btn-outline">Contact Sales</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="clients section overflow-hidden">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="clients-slider">
+          <div
+            class="clients-track track-1"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="clients-slider">
+          <div
+            class="clients-track track-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <div class="container text-center mb-5" data-aos="fade-up">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <p class="section-subtitle">
+      Trusted by teams and enterprises across industries
+    </p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="swiper testimonial-swiper">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <p class="testimonial-text">
+              This ticketing system completely transformed our customer support workflow.
+              Everything is fast, clean and extremely reliable.
+            </p>
+
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/80?img=12" alt="">
+              <div>
+                <h5>Ahmed Hassan</h5>
+                <span>Customer Support Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <p class="testimonial-text">
+              Advanced analytics and scheduled reports helped us take data-driven decisions.
+              Highly recommended for growing companies.
+            </p>
+
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/80?img=32" alt="">
+              <div>
+                <h5>Sarah Ali</h5>
+                <span>Operations Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <p class="testimonial-text">
+              Multi-tenant support and role permissions are exactly what enterprise teams need.
+              Smooth, powerful and scalable.
+            </p>
+
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/80?img=45" alt="">
+              <div>
+                <h5>Mohamed Adel</h5>
+                <span>IT Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <p class="testimonial-text">
+              Multi-tenant support and role permissions are exactly what enterprise teams need.
+              Smooth, powerful and scalable.
+            </p>
+
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/80?img=45" alt="">
+              <div>
+                <h5>Mohamed Adel</h5>
+                <span>IT Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <i class="bi bi-quote quote-icon"></i>
+            <p class="testimonial-text">
+              Multi-tenant support and role permissions are exactly what enterprise teams need.
+              Smooth, powerful and scalable.
+            </p>
+
+            <div class="client-info">
+              <img src="https://i.pravatar.cc/80?img=45" alt="">
+              <div>
+                <h5>Mohamed Adel</h5>
+                <span>IT Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+  </div>
+
+</section> -->
+
+    <section id="testimonials" class="testimonials-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <small class="text-warning fw-bold">TESTIMONIALS</small>
+          <h2 class="fw-bold mt-3">
+            What Our <span class="text-gradient">Clients Say</span>
+          </h2>
+          <p class="text-muted mt-2">
+            Trusted by companies managing thousands of support tickets daily
+          </p>
+        </div>
+
+        <div class="swiper testimonial-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <!-- Card -->
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+
+                  <p>
+                    This platform transformed how our team handles customer
+                    communication. The automation and reporting features are a
+                    game changer.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=18" />
+
+                  <div>
+                    <h6>Ahmed Hassan</h6>
+                    <span>Support Manager</span>
+                  </div>
+
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+                  <p>
+                    Managing tickets manually was exhausting. This platform
+                    automated everything and saved our team hours every day.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=32" />
+                  <div>
+                    <h6>Sarah Mohamed</h6>
+                    <span>Operations Manager</span>
+                  </div>
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+                  <p>
+                    The dashboard analytics gave us clear insights into team
+                    performance and customer satisfaction like never before.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=33" />
+                  <div>
+                    <h6>Omar Adel</h6>
+                    <span>Product Manager</span>
+                  </div>
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+                  <p>
+                    Our support team scaled easily without hiring more agents.
+                    Smart routing and automation made a huge difference.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=19" />
+                  <div>
+                    <h6>Mona Ali</h6>
+                    <span>Head of Support</span>
+                  </div>
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+                  <p>
+                    The user experience is clean and intuitive. Even new team
+                    members learned the system in minutes.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=7" />
+                  <div>
+                    <h6>Khaled Nabil</h6>
+                    <span>Team Supervisor</span>
+                  </div>
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-card-v2">
+                <div class="card-accent"></div>
+
+                <div class="testimonial-content">
+                  <div class="rating">★★★★★</div>
+                  <p>
+                    This platform became an essential part of our daily
+                    workflow. Reliable, fast, and perfectly suited for growing
+                    businesses.
+                  </p>
+                </div>
+
+                <div class="testimonial-footer">
+                  <img src="https://i.pravatar.cc/80?img=3" />
+                  <div>
+                    <h6>Youssef Karim</h6>
+                    <span>Business Owner</span>
+                  </div>
+                  <div class="quote-badge">❝</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+<section class="cta-center text-center py-5">
+  <div class="container">
+
+    <span class="badge badge-glow mb-4" data-aos="fade-down">
+      START IN MINUTES
+    </span>
+
+    <h1 class="cta-title mb-4" data-aos="fade-up">
+      Ready to <span>Simplify</span><br>
+      Your Support System?
+    </h1>
+
+    <p class="cta-text mx-auto mb-5" data-aos="fade-up" data-aos-delay="100">
+      Launch your ticketing platform in minutes. Manage tickets, automate workflows,
+      and deliver better customer support — all in one place.
+    </p>
+
+    <div class="d-flex justify-content-center gap-3 flex-wrap mb-4" data-aos="zoom-in">
+      <a href="#" class="btn btn-gradient btn-lg px-5">
+        Get Started Free
+      </a>
+      <a href="#" class="btn btn-soft">
+        Request a Demo
+      </a>
+    </div>
+
+    <div class="cta-note" data-aos="fade-up" data-aos-delay="200">
+      <i class="fa-solid fa-circle-check"></i>
+      No credit card required · Free trial available
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <div class="text-center mb-5" data-aos="fade-up">
+  <small class="text-warning fw-bold">
+    CONTACT US
+  </small>
+
+  <h2 class="fw-bold mt-3">
+    Get in <span class="text-gradient">Touch</span> With Us
+  </h2>
+
+  <p class="section-desc mt-2">
+    Our team is ready to help you streamline and scale your support operations
+  </p>
+</div>
+
+    <div class="contact-grid">
+
+      <div class="contact-info" data-aos="fade-right">
+  <div class="overlay"></div>
+
+  <div class="contact-info-content">
+    <h3>Contact Information</h3>
+    <p>
+      Get in touch with our team and start simplifying your support system.
+    </p>
+
+    <div class="info-box">
+      <i class="fa-solid fa-location-dot"></i>
+      <div>
+        <h5>Our Location</h5>
+        <p>Cairo, Egypt</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <i class="fa-solid fa-envelope"></i>
+      <div>
+        <h5>Email Us</h5>
+        <p>support@yourticket.com</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <i class="fa-solid fa-phone"></i>
+      <div>
+        <h5>Call Us</h5>
+        <p>+20 100 000 0000</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <i class="fa-solid fa-clock"></i>
+      <div>
+        <h5>Working Hours</h5>
+        <p>Sun – Thu: 9AM – 6PM</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="socials">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</div>
+
+      <div class="contact-right" data-aos="fade-left">
+
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps?q=Cairo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <p>
+            Fill out the form and our team will respond shortly.
+          </p>
+
+          <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">
+              Send Message →
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<footer class="site-footer" data-aos="fade-up" class="overflow-hidden">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-col brand-col" data-aos="fade-right" data-aos-delay="100">
+        <img src="assets/images/logo.png" width="120px" alt="Logo">
+        <p>
+          An enterprise-grade customer support and ticketing platform built for scale. Empower your teams with automation, multi-tenant architecture, advanced analytics, and omnichannel communication—so you can support customers faster, smarter, and at any volume.
+        </p>
+      </div>
+
+      <div class="footer-col links-col" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="text-gradient fs-4 fw-bolder">Main Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col social-col" data-aos="fade-left" data-aos-delay="300">
+        <h5 class="text-gradient fs-4 fw-bolder">Follow Us</h5>
+        <div class="footer-social">
+          <a href="#" data-aos="zoom-in" data-aos-delay="400"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="450"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="500"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="550"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center"
+         data-aos="fade-down"
+         data-aos-delay="600">
+      <p>Copyright © 2025 Techsup Tkt. All rights reserved.</p>
+
+      <div class="footer-payments">
+        <div class="payment-icons">
+          <img src="assets/images/payments/Mada.png" alt="MADA" data-aos="flip-left" data-aos-delay="700">
+          <img src="assets/images/payments/Visa.png" alt="VISA" data-aos="flip-left" data-aos-delay="750">
+          <img src="assets/images/payments/MasterCard.png" alt="Mastercard" data-aos="flip-left" data-aos-delay="800">
+          <img src="assets/images/payments/Apple_Pay.png" alt="Apple Pay" data-aos="flip-left" data-aos-delay="850">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
