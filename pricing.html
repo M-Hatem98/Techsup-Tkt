@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>تكسب تكت</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Cairo Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicons -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg py-1 bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            class="img-fluid"
+            width="150px"
+            alt="Logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#how-we-work">How it works</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="login.html" class="btn btn-login">Login</a>
+            <a href="register.html" class="btn btn-cta">Start Trial</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- PRICING HERO -->
+<section class="pricing-hero">
+  <div class="container">
+    <div class="row align-items-center text-center">
+      <div class="col-lg-8 mx-auto" data-aos="fade-up">
+        <span class="hero-badge">Flexible Plans</span>
+        <h1 class="hero-title">
+          Simple & Transparent
+          <span class="text-gradient">Pricing</span>
+        </h1>
+        <p class="hero-desc">
+          Choose a plan that fits your business today and scale effortlessly as you grow.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <section id="pricing" class="pricing-section mt-5">
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <small class="text-warning fw-bold">PRICING</small>
+          <h2 class="fw-bold mt-3">
+            Choose the <span class="text-gradient">Right Plan</span> for You
+          </h2>
+          <p class="text-muted mt-2">
+            Start free, upgrade anytime, and scale without limits
+          </p>
+        </div>
+
+        <div class="pricing-toggle">
+          <button class="active" data-plan="monthly">Monthly</button>
+          <button data-plan="yearly">Yearly <span>Save 20%</span></button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="pricing-card">
+              <h4>Starter</h4>
+              <p class="plan-desc">Perfect for small teams</p>
+
+              <div class="price">
+                <span class="amount" data-monthly="0" data-yearly="0">0</span>
+                <img
+                  src="assets/images/Saudi_Riyal_Symbol.png"
+                  width="20px"
+                  alt="Saudi_Riyal_Symbol"
+                />
+                <span class="period">/mo</span>
+              </div>
+
+              <ul>
+                <li>Smart Ticketing</li>
+                <li>Live Chat</li>
+                <li>Basic Reports</li>
+              </ul>
+
+              <a  class="btn-outline bg-transparent" data-plan="free" data-billing="monthly" onclick="goToCheckout(this)">
+                Get Started
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="pricing-card featured">
+              <span class="popular">Most Popular</span>
+
+              <h4>Professional</h4>
+              <p class="plan-desc">Best for growing companies</p>
+
+              <div class="price">
+                <span class="amount" data-monthly="199" data-yearly="1900"
+                  >199</span
+                >
+                <img
+                  src="assets/images/Saudi_Riyal_Symbol.png"
+                  width="20px"
+                  alt="Saudi_Riyal_Symbol"
+                />
+                <span class="period">/mo</span>
+              </div>
+
+              <ul>
+                <li>Multi-Tenant System</li>
+                <li>Advanced Analytics</li>
+                <li>Scheduled Reports</li>
+                <li>SMS & WhatsApp</li>
+              </ul>
+
+              <a  class="btn-main" data-plan="pro" data-billing="monthly" onclick="goToCheckout(this)">
+  Upgrade to Pro
+</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="pricing-card">
+              <h4>Enterprise</h4>
+              <p class="plan-desc">Custom solutions</p>
+
+              <div class="price custom">Custom Pricing</div>
+
+              <ul>
+                <li>Unlimited Tickets</li>
+                <li>Custom Roles</li>
+                <li>API Integrations</li>
+              </ul>
+
+              <a  class="btn-outline" data-plan="enterprise" data-billing="yearly" onclick="goToCheckout(this)">
+  Contact Sales
+</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" data-aos="fade-up" class="overflow-hidden">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-col brand-col" data-aos="fade-right" data-aos-delay="100">
+        <img src="assets/images/logo.png" width="120px" alt="Logo">
+        <p>
+          An enterprise-grade customer support and ticketing platform built for scale. Empower your teams with automation, multi-tenant architecture, advanced analytics, and omnichannel communication—so you can support customers faster, smarter, and at any volume.
+        </p>
+      </div>
+
+      <div class="footer-col links-col" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="text-gradient fs-4 fw-bolder">Main Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col social-col" data-aos="fade-left" data-aos-delay="300">
+        <h5 class="text-gradient fs-4 fw-bolder">Follow Us</h5>
+        <div class="footer-social">
+          <a href="#" data-aos="zoom-in" data-aos-delay="400"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="450"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="500"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" data-aos="zoom-in" data-aos-delay="550"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center"
+         data-aos="fade-down"
+         data-aos-delay="600">
+      <p>Copyright © 2025 Techsup Tkt. All rights reserved.</p>
+
+      <div class="footer-payments">
+        <div class="payment-icons">
+          <img src="assets/images/payments/Mada.png" alt="MADA" data-aos="flip-left" data-aos-delay="700">
+          <img src="assets/images/payments/Visa.png" alt="VISA" data-aos="flip-left" data-aos-delay="750">
+          <img src="assets/images/payments/MasterCard.png" alt="Mastercard" data-aos="flip-left" data-aos-delay="800">
+          <img src="assets/images/payments/Apple_Pay.png" alt="Apple Pay" data-aos="flip-left" data-aos-delay="850">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+ <script>
+ let currentBilling = "monthly";
+ function goToCheckout(el) {
+    const plan = el.dataset.plan;
+    const billing = currentBilling;
+
+    let price = null;
+    const amountEl = el.closest(".pricing-card")?.querySelector(".amount");
+
+    if (amountEl && amountEl.dataset[billing]) {
+      price = amountEl.dataset[billing];
+    }
+
+    localStorage.setItem("selectedPlan", plan);
+    localStorage.setItem("billingType", billing);
+    localStorage.setItem("selectedPrice", price);
+
+    window.location.href = "payment.html";
+  }
+
+ </script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

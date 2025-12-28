@@ -548,6 +548,7 @@ a {
   background: linear-gradient(135deg, var(--main-color), var(--second-color));
   color: var(--white-color);
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -558,6 +559,75 @@ a {
   border: 2px solid var(--main-color);
   color: var(--main-color);
   font-weight: 600;
+  cursor: pointer;
+}
+
+.pricing-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0 80px;
+  color: #fff;
+  overflow: hidden;
+  background: url("../images/hero.avif");
+}
+
+.pricing-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.pricing-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+  margin-bottom: 15px;
+}
+
+/* Title */
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.hero-title span {
+  display: inline-block;
+}
+
+/* Description */
+.hero-desc {
+  font-size: 17px;
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+  }
 }
 
 /* ================= Clients ================= */
@@ -1301,6 +1371,7 @@ a {
 
 /* ================= login ==================== */
 
+body.payment,
 body.login {
   margin: 0;
   min-height: 100vh;
@@ -1311,6 +1382,7 @@ body.login {
   overflow: hidden;
 }
 
+.reg-card,
 .login-card {
   position: relative;
   z-index: 2;
@@ -1323,13 +1395,13 @@ body.login {
   backdrop-filter: blur(10px);
 }
 
+.reg-card {
+  margin-top: 90px;
+}
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  color: var(--main-color);
-  font-size: 20px;
   margin-bottom: 25px;
 }
 
@@ -1614,3 +1686,322 @@ body.login {
   display: block;
 }
 
+/* ===================== Register ===================== */
+.reg-step { display: none; }
+.reg-step.active { display: block; }
+
+.reg-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+
+.reg-header h2 {
+  margin: 15px 0 6px;
+  color: var(--dark-color);
+}
+
+.reg-header p {
+  font-size: 14px;
+  color: #666;
+}
+
+.reg-group {
+  margin-bottom: 16px;
+}
+
+.reg-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.reg-group input:focus {
+  border-color: var(--main-color) !important;
+  box-shadow: 0 0 0 2px rgba(109,7,93,0.15) !important;
+}
+
+.reg-terms {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.reg-terms a {
+  color: var(--main-color);
+}
+
+.reg-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    var(--main-color),
+    var(--second-color)
+  );
+  box-shadow: 0 10px 25px rgba(218,19,99,0.4);
+  cursor: pointer;
+}
+
+.reg-plans {
+  display: grid;
+  gap: 15px;
+}
+
+.reg-plan {
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reg-plan.active,
+.reg-plan:hover {
+  border-color: var(--main-color);
+  box-shadow: 0 8px 20px rgba(109,7,93,0.15);
+}
+/* ===================== Payment ===================== */
+
+    .pay-card {
+      width: 100%;
+      max-width: 460px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 18px;
+      padding: 40px 35px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      backdrop-filter: blur(12px);
+      animation: fadeUp 0.5s ease;
+    }
+
+    .pay-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .pay-header i {
+      font-size: 34px;
+      color: #fff;
+      background: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--second-color)
+      );
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(218,19,99,0.4);
+    }
+
+    .pay-header h2 {
+      margin-top: 15px;
+      color: var(--dark-color);
+      font-weight: 700;
+    }
+
+    .pay-header p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .summary-box {
+      background: #f9fafb;
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin-bottom: 25px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    .summary-row.total {
+      border-top: 1px dashed #ddd;
+      padding-top: 12px;
+      margin-top: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--dark-color);
+    }
+
+    .pay-btn {
+      width: 100%;
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--second-color)
+      );
+      box-shadow: 0 10px 25px rgba(218,19,99,0.4);
+      transition: 0.3s;
+    }
+
+    .pay-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(218,19,99,0.8);
+    }
+
+    .pay-back {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .pay-back a {
+      color: var(--main-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===================== Profile ===================== */
+
+     .profile-card {
+      max-width: 1000px;
+      margin: auto;
+      margin-top: 150px;
+      background: rgba(255,255,255,0.92);
+      border-radius: 20px;
+      padding: 35px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+      backdrop-filter: blur(12px);
+      animation: fadeUp 0.5s ease;
+    }
+
+    /* Tabs */
+    .profile-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .profile-tabs button {
+      flex: 1;
+      border: none;
+      padding: 12px;
+      border-radius: 12px;
+      background: #f3f4f6;
+      font-weight: 600;
+      color: #555;
+      transition: 0.3s;
+    }
+
+    .profile-tabs button.active {
+      background: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--second-color)
+      );
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(218,19,99,0.4);
+    }
+
+    /* Sections */
+    .profile-section {
+      display: none;
+    }
+
+    .profile-section.active {
+      display: block;
+    }
+
+    /* Info rows */
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px dashed #ddd;
+      font-size: 14px;
+    }
+
+    .info-row span {
+      color: #666;
+    }
+
+    .plan-box {
+      background: #f9fafb;
+      border-radius: 14px;
+      padding: 20px;
+      margin-top: 25px;
+    }
+
+    .upgrade-btn {
+      margin-top: 15px;
+      width: 100%;
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(
+        135deg,
+        var(--main-color),
+        var(--second-color)
+      );
+      box-shadow: 0 10px 25px rgba(218,19,99,0.4);
+      transition: 0.3s;
+    }
+
+    .upgrade-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px rgba(218,19,99,0.8);
+    }
+
+    /* Invoice table */
+    table {
+      font-size: 14px;
+    }
+
+    .badge-paid {
+      background: rgba(16,185,129,0.15);
+      color: #10b981;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    .badge-pending {
+      background: rgba(245,158,11,0.15);
+      color: #f59e0b;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
