@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
     <meta charset="UTF-8" />
     <title>تكسب تكت</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -47,8 +47,11 @@
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <body class="profile" id="profile">
-    <nav class="navbar fixed-top navbar-expand-lg py-1 bg-light">
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar fixed-top navbar-expand-lg py-1 bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
@@ -91,121 +94,82 @@
         </div>
       </div>
     </nav>
-    <section class="profile-wrapper">
-        <div class="container">
-
-            <div class="profile-card">
-                <!-- Tabs -->
-        <div class="profile-tabs">
-            <button class="active" onclick="showTab('info')">
-            <i class="fas fa-user"></i> Basic Info
-          </button>
-          <button onclick="showTab('invoices')">
-            <i class="fas fa-file-invoice"></i> Invoices
-          </button>
-        </div>
-
-        <!-- BASIC INFO -->
-        <div class="profile-section active" id="tab-info">
-          <div class="info-row">
-            <strong>Username</strong>
-            <span>Mohamed Hatem</span>
-          </div>
-
-          <div class="info-row">
-            <strong>Email</strong>
-            <span>info@example.com</span>
-          </div>
-
-          <div class="info-row">
-            <strong>Company</strong>
-            <span>Tech Support Tkt</span>
-          </div>
-
-          <div class="info-row">
-            <strong>Phone</strong>
-            <span>+20 100 000 0000</span>
-          </div>
-
-          <div class="plan-box">
-            <div class="info-row">
-              <strong>Current Plan</strong>
-              <span class="fw-bold text-success">Professional</span>
-            </div>
-
-            <div class="info-row">
-              <strong>Billing</strong>
-              <span>Monthly</span>
-            </div>
-
-            <button class="upgrade-btn" onclick="goToUpgrade()">
-              Upgrade Plan
-            </button>
-          </div>
-        </div>
-
-        <!-- INVOICES -->
-        <div class="profile-section" id="tab-invoices">
-          <div class="table-responsive">
-            <table class="table align-middle">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Date</th>
-                  <th>Plan</th>
-                  <th>Amount</th>
-                  <th>Status</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#INV-001</td>
-                  <td>2025-01-12</td>
-                  <td>Professional</td>
-                  <td>
-                    199
-                    <img
-                    src="assets/images/Saudi_Riyal_Symbol.png"
-                      width="15px"
-                      alt="Saudi_Riyal_Symbol"
-                    />
-                  </td>
-                  <td><span class="badge-paid">Paid</span></td>
-                  <td>
-                    <a
-                      href="#"
-                      class="text-decoration-none fw-bold text-gradient"
-                    >
-                      Download
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>#INV-002</td>
-                  <td>2025-02-12</td>
-                  <td>Professional</td>
-                  <td>
-                    199
-                    <img
-                      src="assets/images/Saudi_Riyal_Symbol.png"
-                      width="15px"
-                      alt="Saudi_Riyal_Symbol"
-                    />
-                  </td>
-                  <td><span class="badge-pending">Pending</span></td>
-                  <td>—</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+<!-- ===== HERO ===== -->
+<section class="pricing-hero">
+  <div class="container">
+    <div class="row align-items-center text-center">
+      <div class="col-lg-8 mx-auto" data-aos="fade-up">
+        <h1 class="hero-title">
+            <span class="text-gradient">Terms & Conditions</span>
+        </h1>
       </div>
     </div>
-    </section>
-    
-   <footer class="site-footer" data-aos="fade-up">
+  </div>
+</section>
+
+<!-- ===== CONTENT ===== -->
+<section class="policy-section py-5">
+  <div class="container">
+
+      <h3>1. Platform Usage</h3>
+      <p>
+        By using Techsup Tkt, you agree to provide accurate information and
+        maintain the confidentiality of your account.
+      </p>
+
+      <h3>2. Subscriptions & Payments</h3>
+      <p>
+        Paid plans are billed monthly or yearly. Failure to pay may result in service suspension.
+      </p>
+
+      <h3>3. Free Trial</h3>
+      <p>
+        Free trials are for evaluation purposes only. Abuse may lead to termination.
+      </p>
+
+      <h3>4. Acceptable Use</h3>
+      <ul>
+        <li>No illegal activities</li>
+        <li>No unauthorized access to other tenants</li>
+        <li>No malicious or harmful content</li>
+      </ul>
+
+      <h3>5. Data Ownership</h3>
+      <p>
+        You retain ownership of your data. We process it only to deliver the service.
+      </p>
+
+      <h3>6. Service Availability</h3>
+      <p>
+        We strive for high availability but do not guarantee uninterrupted access.
+      </p>
+
+      <h3>7. Termination</h3>
+      <p>
+        Accounts may be suspended for violations, non-payment, or security risks.
+      </p>
+
+      <h3>8. Limitation of Liability</h3>
+      <p>
+        Techsup Tkt is not liable for indirect damages or third-party service failures.
+      </p>
+
+      <h3>9. Changes to Terms</h3>
+      <p>
+        Terms may be updated at any time. Continued use indicates acceptance.
+      </p>
+
+      <h3>10. Contact</h3>
+      <p>
+        For legal inquiries, email:
+        <strong>support@yourticket.com</strong>
+      </p>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" data-aos="fade-up">
   <div class="container">
 
     <div class="footer-grid">
@@ -283,4 +247,5 @@
 
     <script src="assets/js/main.js"></script>
   </body>
+</body>
 </html>

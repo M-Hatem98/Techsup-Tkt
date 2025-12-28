@@ -47,7 +47,7 @@
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-<body class="payment">
+<body class="payment" id="payment">
 <nav class="navbar fixed-top navbar-expand-lg py-1">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -124,29 +124,15 @@
 
   </div>
 
-  <script>
-    const plan = localStorage.getItem("selectedPlan");
-    const billing = localStorage.getItem("billingType");
-    const price = localStorage.getItem("selectedPrice");
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    if (!plan || !billing) {
-      window.location.href = "pricing.html";
-    }
-
-    document.getElementById("planName").textContent =
-      plan.charAt(0).toUpperCase() + plan.slice(1);
-
-    document.getElementById("billingType").textContent =
-      billing === "monthly" ? "Monthly" : "Yearly";
-
-    document.getElementById("price").textContent = price || "0";
-
-    function startPayment() {
-      alert("Payment gateway will be connected here 💳");
-      // redirect after success
-      // window.location.href = "dashboard.html";
-    }
-  </script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>

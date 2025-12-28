@@ -140,28 +140,6 @@
 
 </div>
 
-<script>
-function goToPricing() {
-
-  if (!document.getElementById('terms').checked) {
-    alert('Please accept Terms & Conditions');
-    return;
-  }
-
-  const registerData = {
-    username: document.querySelector('input[placeholder="Username"]').value,
-    company: document.querySelector('input[placeholder="Company Name"]').value,
-    email: document.querySelector('input[placeholder="Email Address"]').value,
-    phone: document.querySelector('input[placeholder="Phone Number"]').value,
-  };
-
-  localStorage.setItem('pendingRegister', JSON.stringify(registerData));
-
-  window.location.href = "pricing.html?from=register";
-}
-</script>
-
-
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

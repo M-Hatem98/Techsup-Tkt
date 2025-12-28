@@ -1238,6 +1238,8 @@ a {
   align-items: center;
 }
 
+
+
 @media (max-width: 992px) {
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -1253,6 +1255,15 @@ a {
     flex-direction: column;
     text-align: center;
   }
+}
+.footer-policies a {
+  color: #bbb;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-policies a:hover {
+  color: var(--second-color);
 }
 
 /* ==================== Login ================= */
@@ -1882,11 +1893,14 @@ body.login {
     }
 
     /* ===================== Profile ===================== */
-
+    .profile-wrapper {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
      .profile-card {
       max-width: 1000px;
-      margin: auto;
-      margin-top: 150px;
       background: rgba(255,255,255,0.92);
       border-radius: 20px;
       padding: 35px;
@@ -1895,7 +1909,6 @@ body.login {
       animation: fadeUp 0.5s ease;
     }
 
-    /* Tabs */
     .profile-tabs {
       display: flex;
       gap: 10px;
@@ -1923,7 +1936,6 @@ body.login {
       box-shadow: 0 10px 25px rgba(218,19,99,0.4);
     }
 
-    /* Sections */
     .profile-section {
       display: none;
     }
@@ -1932,7 +1944,6 @@ body.login {
       display: block;
     }
 
-    /* Info rows */
     .info-row {
       display: flex;
       justify-content: space-between;
@@ -2005,3 +2016,17 @@ body.login {
         transform: translateY(0);
       }
     }
+
+    /* ===================== Privacy & Terms ===================== */
+
+.policy-section h3 {
+  margin-top: 30px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.policy-card p,
+.policy-card li {
+  color: #555;
+  line-height: 1.8;
+}
