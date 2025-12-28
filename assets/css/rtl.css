@@ -1,0 +1,109 @@
+.clients {
+  overflow-x: hidden;
+  padding: 40px 0;
+}
+
+.clients .clients-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  direction: ltr; /* keep math consistent */
+}
+
+.clients .clients-slider:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.clients .clients-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+}
+
+.clients .clients-track.track-1 {
+  animation-name: marquee-left; /* first row: left */
+}
+
+.clients .clients-track.track-2 {
+  animation-name: marquee-right; /* second row: right */
+}
+
+/* Pause on hover */
+.clients .clients-track:hover {
+  animation-play-state: paused;
+}
+
+/* Slide */
+.clients .clients-slide {
+  flex: 0 0 auto;
+  width: 100px;
+  height: 100px;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface-color);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.clients .clients-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.clients .clients-slide:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+/* Hover shine effect */
+.clients .clients-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--main-color), transparent 96%),
+    transparent
+  );
+  transition: transform 0.5s;
+}
+
+.clients .clients-slide:hover::before {
+  transform: translateX(100%);
+}
+
+.clients .clients-slide:hover {
+  transform: translateY(-5px);
+}
+
+/* ================= ANIMATIONS ================= */
+
+/* Row 1 → move left */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* half-width of duplicated content */
+}
+
+/* Row 2 → move right */
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); } /* start at -50% */
+  100% { transform: translateX(0); }   /* move back to 0 */
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .clients .clients-slide { width: 180px; height: 90px; margin: 0 20px; }
+}
+
+@media (max-width: 767px) {
+  .clients .clients-slide { width: 150px; height: 75px; margin: 0 15px; }
+}

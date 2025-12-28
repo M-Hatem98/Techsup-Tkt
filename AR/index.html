@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <title>تك سب تيكت | نظام ذكي لإدارة تذاكر الدعم</title>
+
+    <meta
+      name="description"
+      content="تك سب تيكت منصة احترافية لإدارة تذاكر دعم العملاء، أتمتة ذكية، تقارير متقدمة، وتكامل مع واتساب للشركات المتنامية."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Cairo Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/images/icon.png" />
+
+    <!-- Custom CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!-- RTL CSS -->
+    <link href="../assets/css/rtl.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar fixed-top navbar-expand-lg py-1">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="../assets/images/logo.png"
+            width="150"
+            alt="تك سب تيكت"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">المميزات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-we-work">طريقة العمل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">الأسعار</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">تواصل معنا</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="login.html" class="btn btn-login">تسجيل الدخول</a>
+            <a href="register.html" class="btn btn-cta">ابدأ التجربة</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero d-flex align-items-center overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <small class="text-warning fw-bold fs-5">
+              # منصة SaaS ذكية لإدارة التذاكر
+            </small>
+
+            <h1 class="my-4 text-gradient">
+              إدارة تذاكر الدعم <br />
+              <span class="text-warning">بذكاء وسرعة</span>
+            </h1>
+
+            <p class="mb-4 pe-sm-3">
+              نظام متكامل لإدارة تذاكر الدعم متعدد الشركات، مع تحليلات فورية،
+              أتمتة ذكية، صلاحيات مستخدمين، وتكامل كامل مع واتساب.
+            </p>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="dashboard-wrap">
+              <div class="dashboard-main">
+                <img
+                  src="../assets/images/dashboard-preview.png"
+                  class="img-fluid rounded-3 border"
+                  alt="لوحة التحكم"
+                />
+              </div>
+
+              <div class="floating-card card-1">
+                <strong class="badge bg-main">عدد التذاكر</strong>
+                <img
+                  src="../assets/images/Tickets-Count.png"
+                  class="img-fluid rounded-3"
+                  alt=""
+                />
+              </div>
+
+              <div class="floating-card card-2">
+                <strong class="badge bg-main">التذاكر النشطة</strong>
+                <img
+                  src="../assets/images/Statuses-Percentage.png"
+                  class="img-fluid rounded-3 border"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section id="features" class="features-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <small class="text-warning fw-bold">مميزات قوية</small>
+          <h2 class="fw-bold mt-3">
+            كل ما تحتاجه لإدارة
+            <span class="text-gradient">تذاكر الدعم</span>
+          </h2>
+          <p class="text-muted mt-2">
+            نظام متكامل مصمم للفرق الحديثة والشركات الكبيرة
+          </p>
+        </div>
+
+        <div class="row g-4">
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>إدارة التذاكر الذكية</h5>
+      <p>إنشاء وتتبع وحل التذاكر بكفاءة باستخدام الأتمتة.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets3.lottiefiles.com/packages/lf20_2glqweqs.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>نظام متعدد المستأجرين</h5>
+      <p>إدارة عدة شركات مع عزل كامل وتحكم تام.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_kkflmtur.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>تحليلات متقدمة</h5>
+      <p>رؤى فورية، مؤشرات أداء، وتتبع شامل للأداء.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>تخصيص التذاكر</h5>
+      <p>حقول وأولويات وحالات وسير عمل مرنة.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_rycdh53q.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>الدردشة المباشرة</h5>
+      <p>تواصل فوري بين الموظفين والعملاء.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets6.lottiefiles.com/packages/lf20_tll0j4bb.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>إشعارات فورية</h5>
+      <p>تنبيهات لحظية لتحديثات التذاكر والتعيينات.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_twijbubv.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>التعيين الذكي</h5>
+      <p>قواعد تعيين تلقائية حسب الأدوار والأقسام.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets8.lottiefiles.com/packages/lf20_xRmNN8.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>سجل النشاطات</h5>
+      <p>تتبع جميع الإجراءات والتحديثات لكل تذكرة.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets5.lottiefiles.com/packages/lf20_1pxqjqps.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>قاعدة المعرفة</h5>
+      <p>مقالات دعم ذاتي لتقليل عدد التذاكر.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_qp1q7mct.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>تقارير مجدولة</h5>
+      <p>تقارير يومية، أسبوعية، شهرية وسنوية تلقائية.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>أدوار وصلاحيات متعددة</h5>
+      <p>تحكم كامل في الصلاحيات للمشرفين والوكلاء والمدراء.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets9.lottiefiles.com/packages/lf20_kdx6cani.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>فروع متداخلة</h5>
+      <p>إدارة عدة فروع لكل شركة مع هيكل تنظيمي.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_w51pcehl.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>التحكم في مستلمي التذاكر</h5>
+      <p>تحديد من يستلم التذاكر حسب القسم أو الدور.</p>
+    </div>
+  </div>
+
+  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="50">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <lottie-player
+          src="https://assets9.lottiefiles.com/packages/lf20_4kx2q32n.json"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <h5>تكامل SMS وواتساب</h5>
+      <p>التواصل المباشر مع العملاء عبر قنواتهم المفضلة.</p>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- ================= HOW WE WORK ================= -->
+    <section id="how-we-work" class="how-we-work section py-5">
+  <div class="container section-title text-center" data-aos="fade-up">
+    <small class="text-warning fw-bold">كيف يعمل النظام</small>
+    <h2 class="fw-bold mt-2">
+      خطوات بسيطة <span class="text-gradient">للبدء</span>
+    </h2>
+    <p class="text-muted">
+      أطلق نظام التذاكر الخاص بك خلال دقائق عبر سير عمل واضح وسلس
+    </p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="steps-wrapper">
+      <div class="step-item" data-aos="fade-right" data-aos-delay="200">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-building"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">الخطوة 01</span>
+            <h3>إنشاء شركتك</h3>
+            <p>
+              سجّل مؤسستك، أنشئ الفروع، وقم بإعداد الأقسام بخطوات بسيطة وسريعة.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-people"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">الخطوة 02</span>
+            <h3>تعيين الأدوار والصلاحيات</h3>
+            <p>
+              حدد مستويات الوصول للمشرفين والوكلاء والمدراء مع تحكم كامل.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-ticket-perforated"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">الخطوة 03</span>
+            <h3>إدارة التذاكر</h3>
+            <p>
+              استقبل وأدر التذاكر من الموقع، البريد الإلكتروني، الرسائل النصية،
+              وواتساب عبر لوحة تحكم موحدة.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">الخطوة 04</span>
+            <h3>التحليل والتطوير</h3>
+            <p>
+              راقب الأداء، أنشئ التقارير، وحسّن سير عمل الدعم بشكل مستمر.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ================= Pricing ================= -->
+<section id="pricing" class="pricing-section">
+  <div class="container text-center mb-5" data-aos="fade-up">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <small class="text-warning fw-bold">الأسعار</small>
+      <h2 class="fw-bold mt-3">
+        اختر <span class="text-gradient">الخطة المناسبة</span> لك
+      </h2>
+      <p class="text-muted mt-2">
+        ابدأ مجانًا، قم بالترقية في أي وقت، وتوسّع بدون حدود
+      </p>
+    </div>
+
+    <div class="pricing-toggle">
+      <button class="active" data-plan="monthly">شهري</button>
+      <button data-plan="yearly">سنوي <span>وفر 20%</span></button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="pricing-card">
+          <h4>البداية</h4>
+          <p class="plan-desc">مثالية للفرق الصغيرة</p>
+
+          <div class="price">
+            <span class="amount" data-monthly="0" data-yearly="0">0</span>
+            <img
+              src="../assets/images/Saudi_Riyal_Symbol.png"
+              width="20px"
+              alt="رمز الريال السعودي"
+            />
+            <span class="period">/شهر</span>
+          </div>
+
+          <ul>
+            <li>إدارة التذاكر الذكية</li>
+            <li>الدردشة المباشرة</li>
+            <li>تقارير أساسية</li>
+          </ul>
+
+          <a href="#" class="btn-outline">ابدأ الآن</a>
+        </div>
+      </div>
+
+      <div
+        class="col-lg-4 col-md-6"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <div class="pricing-card featured">
+          <span class="popular">الأكثر شيوعًا</span>
+
+          <h4>الاحترافية</h4>
+          <p class="plan-desc">الأفضل للشركات المتنامية</p>
+
+          <div class="price">
+            <span class="amount" data-monthly="199" data-yearly="1900">199</span>
+            <img
+              src="../assets/images/Saudi_Riyal_Symbol.png"
+              width="20px"
+              alt="رمز الريال السعودي"
+            />
+            <span class="period">/شهر</span>
+          </div>
+
+          <ul>
+            <li>نظام متعدد المستأجرين</li>
+            <li>تحليلات متقدمة</li>
+            <li>تقارير مجدولة</li>
+            <li>تكامل SMS وواتساب</li>
+          </ul>
+
+          <a href="#" class="btn-main">ابدأ التجربة المجانية</a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="pricing-card">
+          <h4>الشركات</h4>
+          <p class="plan-desc">حلول مخصصة حسب احتياجك</p>
+
+          <div class="price custom">سعر مخصص</div>
+
+          <ul>
+            <li>تذاكر غير محدودة</li>
+            <li>أدوار مخصصة</li>
+            <li>تكامل عبر API</li>
+          </ul>
+
+          <a href="#" class="btn-outline">تواصل مع المبيعات</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- ================= CLIENTS ================= -->
+    <section id="clients" class="clients section overflow-hidden">
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="clients-slider">
+          <div
+            class="clients-track track-1"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="clients-slider">
+          <div
+            class="clients-track track-2"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us12.png"
+                class="img-fluid"
+                alt="Client 12"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us11.png"
+                class="img-fluid"
+                alt="Client 11"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us10.png"
+                class="img-fluid"
+                alt="Client 10"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us9.png"
+                class="img-fluid"
+                alt="Client 9"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us8.png"
+                class="img-fluid"
+                alt="Client 8"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us7.png"
+                class="img-fluid"
+                alt="Client 7"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us6.png"
+                class="img-fluid"
+                alt="Client 6"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us5.png"
+                class="img-fluid"
+                alt="Client 5"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us4.png"
+                class="img-fluid"
+                alt="Client 4"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us3.png"
+                class="img-fluid"
+                alt="Client 3"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us2.png"
+                class="img-fluid"
+                alt="Client 2"
+              />
+            </div>
+            <div class="clients-slide">
+              <img
+                src="../assets/images/logos/us1.png"
+                class="img-fluid"
+                alt="Client 1"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================ Testimonials =============== -->
+<section id="testimonials" class="testimonials-section py-5" dir="rtl">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <small class="text-warning fw-bold">آراء العملاء</small>
+      <h2 class="fw-bold mt-3">
+        ماذا يقول <span class="text-gradient">عملاؤنا</span>
+      </h2>
+      <p class="text-muted mt-2">
+        موثوق به من قبل شركات تدير آلاف طلبات الدعم يومياً
+      </p>
+    </div>
+
+    <div class="swiper testimonial-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                هذه المنصة حولت طريقة تعامل فريقنا مع اتصالات العملاء. ميزات الأتمتة والتقارير غيرت اللعبة تماماً.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=18" />
+              <div>
+                <h6>أحمد حسن</h6>
+                <span>مدير الدعم</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                إدارة الطلبات يدوياً كانت مرهقة. هذه المنصة آوتوماتيكية بالكامل ووفرّت ساعات عمل يومياً لفريقنا.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=32" />
+              <div>
+                <h6>سارة محمد</h6>
+                <span>مديرة العمليات</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                تحليلات لوحة التحكم قدمت لنا رؤى واضحة حول أداء الفريق ورضا العملاء كما لم يحدث من قبل.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=33" />
+              <div>
+                <h6>عمر عادل</h6>
+                <span>مدير المنتج</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                فريق الدعم نما بسهولة دون الحاجة لتوظيف المزيد من الوكلاء. التوجيه الذكي والأتمتة أحدث فرقاً كبيراً.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=19" />
+              <div>
+                <h6>منى علي</h6>
+                <span>رئيسة الدعم</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                تجربة المستخدم نظيفة وبديهية. حتى الأعضاء الجدد تعلموا النظام في دقائق.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=7" />
+              <div>
+                <h6>خالد نبيل</h6>
+                <span>مشرف الفريق</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card-v2">
+            <div class="card-accent"></div>
+            <div class="testimonial-content">
+              <div class="rating">★★★★★</div>
+              <p>
+                أصبحت هذه المنصة جزءاً أساسياً من سير العمل اليومي لدينا. موثوقة وسريعة ومناسبة تماماً للشركات النامية.
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <img src="https://i.pravatar.cc/80?img=3" />
+              <div>
+                <h6>يوسف كريم</h6>
+                <span>مالك العمل</span>
+              </div>
+              <div class="quote-badge">❝</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta-center text-center py-5">
+      <div class="container">
+        <span class="badge badge-glow mb-4">ابدأ خلال دقائق</span>
+
+        <h1 class="cta-title mb-4">
+          جاهز لتبسيط <br />
+          <span>نظام الدعم</span> الخاص بك؟
+        </h1>
+
+        <p class="cta-text mx-auto mb-5">
+          أطلق منصة الدعم الخاصة بك بسرعة، أدر التذاكر، وأتمت العمليات، وقدم
+          تجربة دعم احترافية لعملائك.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+          <a href="register.html" class="btn btn-gradient btn-lg px-5">
+            ابدأ مجانًا
+          </a>
+          <a href="#" class="btn btn-soft">اطلب عرض توضيحي</a>
+        </div>
+
+        <div class="cta-note">
+          <i class="fa-solid fa-circle-check"></i>
+          لا تحتاج لبطاقة ائتمان · تجربة مجانية متاحة
+        </div>
+      </div>
+    </section>
+    <!-- ================= CONTACT US ================= -->
+<section id="contact" class="contact-section" dir="rtl">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <small class="text-warning fw-bold">تواصل معنا</small>
+
+      <h2 class="fw-bold mt-3">
+        تواصل <span class="text-gradient">معنا</span>
+      </h2>
+
+      <p class="section-desc mt-2">
+        فريقنا جاهز لمساعدتك على تبسيط وتوسيع عمليات الدعم الخاصة بك
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info" data-aos="fade-right">
+        <div class="overlay"></div>
+
+        <div class="contact-info-content">
+          <h3>معلومات الاتصال</h3>
+          <p>تواصل مع فريقنا وابدأ بتبسيط نظام الدعم الخاص بك.</p>
+
+          <div class="info-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h5>موقعنا</h5>
+              <p>12 سيريكون - الطابق الرابع - المكتب رقم 403، شارع العليا، الرياض 12241، المملكة العربية السعودية.</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h5>البريد الإلكتروني</h5>
+              <p>info@techsupbusiness.com</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h5>اتصل بنا</h5>
+              <p>+966 920015409</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h5>ساعات العمل</h5>
+              <p>24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form & Map -->
+      <div class="contact-right" data-aos="fade-left">
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps?q=Cairo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="contact-form">
+          <h3>أرسل لنا رسالة</h3>
+          <p>املأ النموذج وسيرد فريقنا عليك في أقرب وقت.</p>
+
+          <form>
+            <input type="text" placeholder="الاسم الكامل" required />
+            <input type="email" placeholder="البريد الإلكتروني" required />
+            <input type="text" placeholder="الموضوع" />
+            <textarea placeholder="رسالتك"></textarea>
+
+            <button type="submit">إرسال الرسالة →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col brand-col">
+            <img src="../assets/images/logo.png" width="120" alt="" />
+            <p>
+              منصة احترافية لإدارة تذاكر دعم العملاء، مصممة للتوسع، مع أتمتة
+              ذكية وتحليلات متقدمة وتكامل متعدد القنوات.
+            </p>
+          </div>
+
+          <div class="footer-col links-col">
+            <h5 class="text-gradient fw-bold">الصفحات الرئيسية</h5>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="#features">المميزات</a></li>
+              <li><a href="pricing.html">الأسعار</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col social-col">
+            <h5 class="text-gradient fw-bold">تابعنا</h5>
+            <div class="footer-social">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom d-flex justify-content-between flex-wrap gap-3">
+          <div class="footer-policies d-flex gap-3">
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">الشروط والأحكام</a>
+          </div>
+
+          <div class="footer-payments">
+            <div class="payment-icons">
+                <img src="../assets/images/payments/Mada.png" alt="MADA" />
+                <img src="../assets/images/payments/Visa.png" alt="VISA" />
+                <img src="../assets/images/payments/MasterCard.png" alt="Mastercard" />
+                <img src="../assets/images/payments/Apple_Pay.png" alt="Apple Pay" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-4">
+          © 2025 Techsup Tkt – جميع الحقوق محفوظة
+        </div>
+      </div>
+    </footer>
+
+    <!-- ================= JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
